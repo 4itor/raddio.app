@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redirecting...</title>
+  <meta http-equiv="refresh" content="4; url=https://radio.moai.link" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@900&display=block');
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=block');
+    body {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 400;
+      user-select: none;
+      background-color: #282c35;
+      color: #eeeeee;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0px;
+      padding: 0px;
+    }
+    h1 {
+      font-family: 'Sansita Swashed', cursive;
+      font-weight: 900;
+      font-size: 48pt;
+      margin-bottom: 25px;
+    }
+    p {
+      opacity: 0.8;
+    }
+    .spinner {
+      margin-top: 2rem;
+      width: 40px;
+      height: 40px;
+      border: 4px solid rgba(255, 255, 255, 0.3);
+      border-top: 4px solid #eeeeee;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <h1>New location is radio.moai.link</h1>
+  <p>You will be redirected in a few seconds.</p>
+  <div class="spinner"></div>
+
+  <script>
+    // Fallback in case the meta refresh doesn't work
+    setTimeout(() => {
+      window.location.href = "https://radio.moai.link";
+    }, 4000);
+  </script>
+</body>
+</html>
